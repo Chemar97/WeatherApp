@@ -70,7 +70,7 @@ function App() {
 
   console.log(imgWeather[nomImgWeather])
   
-  document.body.style.background= `url(${imgWeather[nomImgWeather + '1']}) no-repeat center center `;
+  document.body.style.background= `url('./Atmosphere.gif') no-repeat center center `;
   document.body.style.backgroundSize=  'cover';
 
   return (
