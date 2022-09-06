@@ -1,7 +1,6 @@
 import React from 'react';
 
 const AppContent = ({dropshadow, infoWeather, imgWeather,nomImgWeather , changeDegrees, buttonDegrees }) => {
-    const icon = infoWeather.weather?.[0].icon
     
     return (
 
@@ -22,22 +21,22 @@ const AppContent = ({dropshadow, infoWeather, imgWeather,nomImgWeather , changeD
             <div className="description">
                 <h3>Description: </h3>
                 <p>{infoWeather.weather?.[0].description}</p>
-                <img src= {`http://openweathermap.org/img/wn/${icon}.png`} alt="icon" style={{width: `25px`}} />
+                <img src= {`http://openweathermap.org/img/wn/${infoWeather.weather?.[0].icon}.png`} alt="icon" style={{width: `25px`}} />
             </div>
             <div className="windchill">
                 <h3>Windchill: </h3>
                 <p>{infoWeather.main?.feels_like}{changeDegrees ? ' °F': ' °C'}</p>
-                <img src= './src/assets/thermometer.png' alt="icon" style={{width: `25px`}} />
+                <img src= './thermometer.png' alt="icon" style={{width: `25px`}} />
             </div>
             <div className="humidity">
                 <h3>Humidity: </h3>
                 <p>{infoWeather.main?.humidity}%</p>
-                <img src= './src/assets/humidity.png' alt="icon" style={{width: `25px`}} />
+                <img src= './humidity.png' alt="icon" style={{width: `25px`}} />
             </div>
             <div className="wind-speed">
                 <h3>Wind speed: </h3>
                 <p>{infoWeather.wind?.speed}{changeDegrees ? ' mph': ' m/s'}</p>
-                <img src= './src/assets/wind.png' alt="icon" style={{width: `25px`}} />
+                <img src= './wind.png' alt="icon" style={{width: `25px`}} />
             </div>
             </section>
             <button onClick={buttonDegrees}>Change to... {changeDegrees ? '°C'  : '°F'}</button>

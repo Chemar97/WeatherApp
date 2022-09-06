@@ -26,20 +26,20 @@ function App() {
   }
 
   const imgWeather = {
-    Atmosphere: './src/assets/Atmosphere.gif',
-    Atmosphere1: './src/assets/Atmosphere1.gif',
-    Clear: './src/assets/Clear.gif',
-    Clear1: './src/assets/Clear1.gif',
-    Clouds: './src/assets/Clouds.gif',
-    Clouds1: './src/assets/Clouds1.gif',
-    Drizzle: './src/assets/Drizzle.gif',
-    Drizzle1: './src/assets/Drizzle1.gif',
-    Rain: './src/assets/Rain.gif',
-    Rain1: './src/assets/Rain1.gif',
-    Snow: './src/assets/Snow.gif',
-    Snow1: './src/assets/Snow1.gif',
-    Thunderstorm: './src/assets/Thunderstorm.gif',
-    Thunderstorm1: './src/assets/Thunderstorm1.gif',
+    Atmosphere: './Atmosphere.gif',
+    Atmosphere1: './Atmosphere1.gif',
+    Clear: './Clear.gif',
+    Clear1: './Clear1.gif',
+    Clouds: './Clouds.gif',
+    Clouds1: './Clouds1.gif',
+    Drizzle: './Drizzle.gif',
+    Drizzle1: './Drizzle1.gif',
+    Rain: './Rain.gif',
+    Rain1: './Rain1.gif',
+    Snow: './Snow.gif',
+    Snow1: './Snow1.gif',
+    Thunderstorm: './Thunderstorm.gif',
+    Thunderstorm1: './Thunderstorm1.gif',
 
   }
 
@@ -67,6 +67,7 @@ function App() {
   
   let nomImgWeather = String(infoWeather.weather?.[0].main)
   
+
   console.log(imgWeather[nomImgWeather])
   
   document.body.style.background= `url(${imgWeather[nomImgWeather + '1']}) no-repeat center center `;
