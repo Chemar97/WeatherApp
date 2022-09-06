@@ -1,0 +1,121 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+#root{
+  margin: auto auto;
+  
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2em;
+  min-width: 500px;
+  min-height: 400px;
+  background-color: rgba(255, 255, 255, 0.456);
+  border-radius: 15px;
+  text-align: center;
+  
+}
+
+.principal-weather{
+  align-self: center;
+}
+
+.weather-img{
+  width: 150px;
+  border-radius: 10px;
+}
+
+.description{
+  color: #0081CF;
+}
+
+.info-weather{
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 1.5rem;
+  
+}
+
+button {
+  grid-column-start: 0;
+  grid-column-end: 3;
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: black;
+  border-color: #9B89B3;
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  color: white;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.card-skeleton{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2em;
+  min-width: 500px;
+  min-height: 400px;
+  background-color: #ffff;
+  border-radius: 15px;
+  
+}
+
+.card1{
+  background-image: linear-gradient(90deg, #ccc 0px, rgb(229 229 229 / 90%) 40px, #ccc 80% );
+  background-size: 300%;
+  background-position: 100% 0;
+  animation: shimmer 1.5s infinite;
+}
+
+.weather-img-skeleton{
+  background-color: gray;
+  width: 180px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.description1-skeleton{
+  margin-top: 30px;
+  background-color: gray;
+  width: 180px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.info-weather-skeleton{
+  background-color: gray;
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 1.5rem;
+  border-radius: 10px;
+}
+
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(274, 14%, 90%);
+  }
+  100% {
+    background-color: hsla(204, 8%, 38%, 0.808);
+  }
+}
+
+@keyframes shimmer{
+  to {
+    background-position: -100% 0;
+  }
+}
+

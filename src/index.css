@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Bebas+Neue&display=swap');
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+b{
+    font-family: 'Cabin', sans-serif;
+    color: #0081CF;
+}
+
+p{
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    color: black;
+    font-weight: 900;
+    font-size: larger;
+    position: relative;
+
+}
+
+h2{
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    color: black;
+    font-size: x-large;
+}
+
+h3{
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: large;
+    color: black;
+}
