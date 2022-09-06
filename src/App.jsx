@@ -31,7 +31,7 @@ function App() {
     Clear: './Clear.gif',
     Clear1: './Clear1.gif',
     Clouds: './Clouds.gif',
-    Clouds1: './Clouds1.gif',
+    Clouds1: 'https://c.tenor.com/f14xUacYc1oAAAAd/storm-world-meteorological-day.gif',
     Drizzle: './Drizzle.gif',
     Drizzle1: './Drizzle1.gif',
     Rain: './Rain.gif',
@@ -70,7 +70,7 @@ function App() {
 
   console.log(imgWeather[nomImgWeather])
   
-  document.body.style.background= `url('./Atmosphere.gif') no-repeat center center `;
+  document.body.style.background= `url(${imgWeather[nomImgWeather + '1']}) no-repeat center center `;
   document.body.style.backgroundSize=  'cover';
 
   return (
