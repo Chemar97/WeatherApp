@@ -26,20 +26,20 @@ function App() {
   }
 
   const imgWeather = {
-    Atmosphere: './Atmosphere.gif',
-    Atmosphere1: './Atmosphere1.gif',
-    Clear: './Clear.gif',
-    Clear1: './Clear1.gif',
-    Clouds: './Clouds.gif',
-    Clouds1: 'https://c.tenor.com/f14xUacYc1oAAAAd/storm-world-meteorological-day.gif',
-    Drizzle: './Drizzle.gif',
-    Drizzle1: './Drizzle1.gif',
-    Rain: './Rain.gif',
-    Rain1: './Rain1.gif',
-    Snow: './Snow.gif',
-    Snow1: './Snow1.gif',
-    Thunderstorm: './Thunderstorm.gif',
-    Thunderstorm1: './Thunderstorm1.gif',
+    Atmosphere: 'https://media.giphy.com/media/ftfVpeWsm95QgGfOZ8/giphy.gif',
+    Atmosphere1: 'https://media.giphy.com/media/yhZr5Wx7CBFbq/giphy.gif',
+    Clear: 'https://media.giphy.com/media/7LLviNCYAmMWA/giphy.gif',
+    Clear1: 'https://media.giphy.com/media/67uxmHhIF3uh6Ph8ew/giphy-downsized-large.gif',
+    Clouds: 'https://media.giphy.com/media/gs2ubveMcc2zPVNceK/giphy.gif',
+    Clouds1: 'https://media.giphy.com/media/jOafPZq6WvCZIjXka3/giphy.gif',
+    Drizzle: 'https://media.giphy.com/media/n0Zt16UrMKNFu/giphy.gif',
+    Drizzle1: 'https://media.giphy.com/media/xUA7bjscVZopwlB1zq/giphy.gif',
+    Rain: 'https://media.giphy.com/media/3osxYmUhBUjzd430tO/giphy.gif',
+    Rain1: 'https://media.giphy.com/media/oSaLJmbUgZQm4/giphy.gif',
+    Snow: 'https://media.giphy.com/media/3oKIP7W2zOcac3RvFe/giphy.gif',
+    Snow1: 'https://media.giphy.com/media/7Bgpw7PwdxoDC/giphy.gif',
+    Thunderstorm: 'https://media.giphy.com/media/CKlafeh1NAxz35KTq4/giphy-downsized-large.gif',
+    Thunderstorm1: 'https://media.giphy.com/media/xaZCqV4weJwHu/giphy.gif',
 
   }
 
@@ -71,10 +71,11 @@ function App() {
   console.log(imgWeather[nomImgWeather])
   
   document.body.style.background= `url(${imgWeather[nomImgWeather + '1']}) no-repeat center center `;
-  document.body.style.backgroundSize=  'cover';
+  document.body.style.backgroundSize=  '100%';
 
   return (
     <div className="App">
+      <img src="" alt="" />
       {
         isLoading ? (
             <ContentLoader/>

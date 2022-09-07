@@ -26,17 +26,17 @@ const AppContent = ({dropshadow, infoWeather, imgWeather,nomImgWeather , changeD
             <div className="windchill">
                 <h3>Windchill: </h3>
                 <p>{infoWeather.main?.feels_like}{changeDegrees ? ' °F': ' °C'}</p>
-                <img src= './thermometer.png' alt="icon" style={{width: `25px`}} />
+                <img src= 'https://cdn-icons-png.flaticon.com/512/46/46303.png' alt="icon" style={{width: `25px`}} />
             </div>
             <div className="humidity">
                 <h3>Humidity: </h3>
                 <p>{infoWeather.main?.humidity}%</p>
-                <img src= './humidity.png' alt="icon" style={{width: `25px`}} />
+                <img src= 'https://cdn-icons-png.flaticon.com/512/727/727790.png' alt="icon" style={{width: `25px`}} />
             </div>
             <div className="wind-speed">
                 <h3>Wind speed: </h3>
                 <p>{infoWeather.wind?.speed}{changeDegrees ? ' mph': ' m/s'}</p>
-                <img src= './wind.png' alt="icon" style={{width: `25px`}} />
+                <img src= 'https://icon-library.com/images/wind-speed-icon/wind-speed-icon-1.jpg' alt="icon" style={{width: `25px`}} />
             </div>
             </section>
             <button onClick={buttonDegrees}>Change to... {changeDegrees ? '°C'  : '°F'}</button>
